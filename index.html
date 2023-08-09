@@ -17,29 +17,29 @@
       <form>
         <div class="section" id="name">
           <h3>Name</h3>
-          <label for="firstNam">First</label>
-          <input type="name" id="firstNam" value=""/>
-          <label for="lastNam">Last</label>
-          <input type="name" id="lastNam" value=""/>
+          <label for="firstNam">*First</label>
+          <input type="name" id="firstNam" value="" required/>
+          <label for="lastNam">*Last</label>
+          <input type="name" id="lastNam" value="" required/>
         </div>
         <div class="section" id="contact">
           <h3>Contact</h3>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" value=""/>
+          <label for="email">*Email</label>
+          <input type="email" id="email" name="email" value="" required/>
           <label for="phone">Phone</label>
-          <input type="tel" id="tel" name="tel" value=""/>
+          <input type="tel" id="tel" name="tel" value="" minlength="7" maxlength="10"/>
           <label for="website">Website/URL</label>
           <input type="url" id="url" name="url"/>
         </div>
         <div class="section" id="password">
           <h3>Create Password</h3>
-          <label for="pwd">Password</label>
-          <input type="password" id="pwd" value=""/>
-          <label for="pwd2">Confirm password</label>
-          <input type="password" id="pwd2" value=""/>
+          <label for="pwd">*Password</label>
+          <input type="password" id="pwd" value="" pattern="[0-9a-fA-F]{4,8}" required/>
+          <label for="pwd2">*Confirm password</label>
+          <input type="password" id="pwd2" value="" pattern="[0-9a-fA-F]{4,8}" required/>
         </div>
+        <button type="submit">Become a Member</button>
       </form>
-      <button type="submit">Become a Member</button>
     </div>
 </body>
 </html>

@@ -32,17 +32,27 @@ body {
 
 .headerlnk {
     font-family: 'mont';
-    background-color: rgba(1, 1, 1, .5);
+    background-color: rgba(1, 1, 1, .7);
+    border-radius: 5px;
+    
 }
 
 #logo {
     align-self: center;
-    justify-self: center;
 }
 
 #sign-sheet {
     background-color: #FFFFFF;
     color: #111111;
+}
+
+::selection {
+    background-color: aqua;
+}
+
+:focus {
+    border-color: aqua;
+    border-width: 4px;
 }
 
 button {
