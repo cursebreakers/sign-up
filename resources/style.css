@@ -1,0 +1,59 @@
+* {
+    font-family: 'Courier New', 'Helvetica', 'monospace';
+}
+
+@font-face {
+    font-family: mont;
+    src: url(./font/montserrat/Montserrat-Regular.otf);
+}
+
+body {
+    display: flex;
+    background-color: #111111;
+    color: antiquewhite;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+
+.panel {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+#title {
+    background: no-repeat url(./imgs/background.png);
+    width: 50vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerlnk {
+    font-family: 'mont';
+    background-color: rgba(1, 1, 1, .5);
+}
+
+#logo {
+    align-self: center;
+    justify-self: center;
+}
+
+#sign-sheet {
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+button {
+    background-color: #111111;
+    color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.section {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
